@@ -630,12 +630,11 @@ p {
   right: 42px;
   /*дизайн кнопки*/
    background-color: transparent;
+   border: none;
 
 }
 .close {
-  fill: white;
- 
-  border: none;
+  fill: white; 
   cursor: pointer;
 }
 
