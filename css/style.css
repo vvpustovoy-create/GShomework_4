@@ -337,7 +337,7 @@ header {
 .Why-us__card {
   display: flex;
   gap: 56px;
-  flex-basis: calc(100%-112px / 3); /*для адаптивності*/
+  flex-basis: calc(100% - 112px / 3); /*для адаптивності*/
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -380,14 +380,13 @@ section-title-procedures {
 }
 .procedures-section__container {
   overflow: hidden; /*обрізає все що виходить за межі*/
-  flex-basis: calc(100%-32px / 3);
+  flex-basis: calc(100% - 32px / 3);
   padding-bottom: 43px;
 }
 .procedures-section__list {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  transform: translateY(-3px);
 }
 
 .procedure-card {
@@ -405,6 +404,7 @@ section-title-procedures {
   overflow: hidden;
   /*transform: rotate(-180deg);*/
   justify-content: center;
+  text-align: center;
 }
 
 .procedure-card__image {
@@ -418,7 +418,6 @@ section-title-procedures {
   font-weight: 400;
   font-size: 22px;
   line-height: 118%;
-  font-family: 'Roboto' sans-serif;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -538,12 +537,9 @@ a {
 }
 
 .follow-us-footer {
-  padding-top: 16px;
   display: flex;
   gap: 24px;
-  /* margin-right: 102px;*/
   justify-content: space-around;
-  flex-grow: 1; /*Ігнорується браузером*/
 }
 .follow-us_icon_footer {
   fill: white;
@@ -633,7 +629,7 @@ p {
   top: 42px;
   right: 42px;
   /*дизайн кнопки*/
-  fill: transparent;
+  fill: white;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -646,8 +642,7 @@ p {
   width: 310px;
   height: 52px;
 }
-.form-field,
-contact {
+.form-field.contact {
   display: block;
   margin: 0 auto 16px;
   width: 310px;
