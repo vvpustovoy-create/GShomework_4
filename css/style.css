@@ -375,7 +375,6 @@ section-title-procedures {
 .procedures-section__slider {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 96px;
 }
 .procedures-section__container {
@@ -386,6 +385,7 @@ section-title-procedures {
 .procedures-section__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -629,8 +629,12 @@ p {
   top: 42px;
   right: 42px;
   /*дизайн кнопки*/
+   background-color: transparent;
+
+}
+.close {
   fill: white;
-  background-color: transparent;
+ 
   border: none;
   cursor: pointer;
 }
