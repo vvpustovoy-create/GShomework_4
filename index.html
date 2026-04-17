@@ -51,10 +51,10 @@
       </div>
     </header>
     <main>
-      <section class="mainSection">
+      <section class="main-Section">
         <div class="container">
           <div class="hero-container">
-            <div class="maintitle-container">
+            <div class="main-title-container">
               <p>Косметологічна клініка</p>
               <h1 class="main-title">Beauty<br />Zone</h1>
             </div>
@@ -115,77 +115,41 @@
           </div>
         </div>
       </section>
-      <section class="Whychooseus-section" id="Why_choose_us">
+      <section class="Why-us-section" id="Why_choose_us">
         <div class="container">
-          <!-- <div class="choose_us-container">
-            <svg
-              width="1440"
-              height="1506"
-              viewBox="0 0 1440 1506"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1015.22 1337.16C843.995 1419.9 681.707 1521.67 492.376 1503.93C294.908 1485.41 120.319 1384.81 -15.7281 1240.52C-170.733 1076.12 -313.597 882.646 -306.334 656.797C-298.462 411.99 -193.856 145.024 23.1542 31.4023C227.164 -75.4123 448.972 123.052 678.526 141.149C938.036 161.607 1224.83 -18.2038 1429.76 142.29C1655.09 318.766 1777.41 657.859 1683.59 928.291C1594.61 1184.79 1259.68 1219.03 1015.22 1337.16Z"
-                fill="url(#paint0_linear_64_137)"
-                fill-opacity="0.2"
-              />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_64_137"
-                  x1="851"
-                  y1="-23.507"
-                  x2="851"
-                  y2="1196.99"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0.334676" stop-color="#2B7FFF" />
-                  <stop
-                    offset="0.634564"
-                    stop-color="#2B7FFF"
-                    stop-opacity="0"
-                  />
-                  <stop
-                    offset="0.894715"
-                    stop-color="#2B7FFF"
-                    stop-opacity="0"
-                  />
-                </linearGradient>
-              </defs>
-            </svg>  -->
-          <h2 class="Why-choose___section-title">
-            Чому люди <br />
-            <span class="title-span">обирають нас</span>
-          </h2>
-          <div class="Whychooseus-container">
-            <div class="card Why-chooseus-1">
-              <svg class="Why-us">
-                <use href="./images/Icons.svg#icon-experience"></use>
-              </svg>
-              <p class="Why-choose_text">
-                Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                від 5 років.
-              </p>
-            </div>
-            <div class="card Why-chooseus-2">
-              <svg class="Why-us">
-                <use href="./images/Icons.svg#icon-equipment"></use>
-              </svg>
-              <p class="Why-choose_text">
-                Використовуємо тільки професійне обладнання та косметику,
-                перевірену часом.
-              </p>
-            </div>
-            <div class="card Why-chooseus-3">
-              <svg class="Why-us">
-                <use href="./images/Icons.svg#icon-advantages"></use>
-              </svg>
-              <p class="Why-choose_text">
-                Наша мета - підкреслити переваги та приховати недоліки, а не
-                переробити.
-              </p>
+          <div class="Why-us-container">
+            <h2 class="Why-us__section-title">
+              Чому люди <br />
+              <span class="title-span">обирають нас</span>
+            </h2>
+            <div class="Why-us__card">
+              <div class="card Why-us_experience">
+                <svg class="Why-us">
+                  <use href="./images/Icons.svg#icon-experience"></use>
+                </svg>
+                <p class="Why-us_text">
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років.
+                </p>
+              </div>
+              <div class="card Why-us_equipment">
+                <svg class="Why-us">
+                  <use href="./images/Icons.svg#icon-equipment"></use>
+                </svg>
+                <p class="Why-us_text">
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом.
+                </p>
+              </div>
+              <div class="card Why-us_advantages">
+                <svg class="Why-us">
+                  <use href="./images/Icons.svg#icon-advantages"></use>
+                </svg>
+                <p class="Why-us_text">
+                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                  переробити.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -274,7 +238,7 @@
               </h3>
               <!--############### FORM ################## -->
               <form name="contact-form-main" autocomplete="off">
-                <div class="form-field">
+                <div class="form-field contact">
                   <label class="form-label" for="user-name"></label>
                   <input
                     class="form-input"
@@ -286,7 +250,7 @@
                     pattern="^[А-Яа-яЁёA-Za-z]+\s[А-Яа-яЁёA-Za-z]+$"
                   />
                 </div>
-                <div class="form-field">
+                <div class="form-field contact">
                   <label class="form-label" for="user-tel"></label>
                   <input
                     class="form-input"
@@ -298,7 +262,7 @@
                     pattern="^\+380\d{9}$"
                   />
                 </div>
-                <div class="form-field">
+                <div class="form-field contact">
                   <label class="form-label" for="user-email"></label>
                   <input
                     class="form-input"
@@ -310,7 +274,7 @@
                     pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                   />
                 </div>
-                <button class="form-button" type="submit">
+                <button class="form-button button" type="submit">
                   Записатись безкоштовно
                 </button>
                 <p class="agree">
@@ -330,25 +294,25 @@
           <a href="#"><img src="./images/logo.svg" alt="Логотип" /> </a>
           <nav class="footer-nav">
             <ul class="footer-menu">
-              <li><a class="footer-link" href="#aboutus">Про нас</a></li>
-              <li><a class="footer-link" href="#Why_choose_us">Чому ми</a></li>
+              <li><a class="footer_link" href="#aboutus">Про нас</a></li>
+              <li><a class="footer_link" href="#Why_choose_us">Чому ми</a></li>
               <li>
-                <a class="footer-link" href="#our_procedures">Наші процедури</a>
+                <a class="footer_link" href="#our_procedures">Наші процедури</a>
               </li>
-              <li><a class="footer-link" href="#contacts">Контакти</a></li>
+              <li><a class="footer_link" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
           <div class="followus-address">
             <address class="footer-address">
               <ul>
                 <li>
-                  <a class="footer-link" href="tel:+380960000007"
+                  <a class="footer_link" href="tel:+380960000007"
                     >+ 38 (096) 000 00 07
                   </a>
                 </li>
                 <li>
                   <a
-                    class="footer-link"
+                    class="footer_link"
                     href="mailto:beautyzone@gmail.com"
                     target="_blank"
                     >beautyzone@gmail.com
@@ -356,7 +320,7 @@
                 </li>
                 <li>
                   <a
-                    class="footer-link"
+                    class="footer_link"
                     href="https://maps.app.goo.gl/57GWbXiyNkMdQF5n7"
                     >Україна,м. Київ, <br />
                     вул. Тараса Шевченка 5
@@ -364,7 +328,7 @@
                 </li>
               </ul>
             </address>
-            <ul class="follow-us">
+            <ul class="follow-us-footer">
               <li>
                 <a href="#">
                   <svg class="follow-us_icon_footer">
@@ -389,7 +353,7 @@
             </ul>
           </div>
           <div class="other">
-            <a class="footer-link" href="#" target="_blank"
+            <a class="footer_link" href="#" target="_blank"
               >Політика конфеденційності
             </a>
             <p>&copy; 2022 Дані захищені</p>
@@ -400,7 +364,11 @@
     <!-- MODAL FORM -->
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close button" type="button">
+          <svg width="32" height="32">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <h2>Замовити дзвінок</h2>
         <h3>
           Запишіться <span>безкоштовно</span> <br />

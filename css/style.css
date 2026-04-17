@@ -1,5 +1,5 @@
 /*Styles base*/
-/*FONTS_*/
+/*FONTS*/
 /* play-regular - latin */
 @font-face {
   font-display: swap;
@@ -51,7 +51,7 @@ body {
 }
 a {
   display: inline-block;
-  font: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
@@ -62,11 +62,18 @@ h6,
 p {
   margin-top: 0;
 }
+p,
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
 h2 {
   font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
   text-align: center;
+}
+.button {
 }
 /*Style-link*/
 ul {
@@ -77,8 +84,8 @@ ul {
 .title-span {
   color: var(--color-brand);
 }
-.header-link,
-.footer-link {
+.header_link,
+.footer_link {
   font-style: normal;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
@@ -93,11 +100,12 @@ ul {
 header {
   /*background-color: antiquewhite;*/
   position: absolute;
-  padding-top: 25px;
-  padding-bottom: 42px;
+  padding-top: 32px;
+  /*padding-bottom: 42px;*/
   right: 0px;
   left: 0px;
   width: 100%;
+
   max-height: 106px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.3);
@@ -114,7 +122,6 @@ header {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
-  align-items: center;
 }
 .header__menu {
   display: flex;
@@ -140,7 +147,8 @@ header {
   gap: 32px;
   /* margin-right: 102px;
   justify-content: space-around;*/
-  flex-grow: 1; /*Ігнорується браузером*/
+  /* flex-grow: 1; /*Ігнорується браузером*/
+  justify-content: flex-end;
 }
 .follow-us_icon {
   width: 32px;
@@ -154,7 +162,7 @@ header {
 /*####-----####*/
 /*Main Section*/
 
-.mainSection {
+.main-Section {
   background-image: url(../images/header_background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -164,17 +172,16 @@ header {
   padding-left: 105px;
   padding-top: 123px;
 }
-.maintitle-container {
+.main-title-container {
   max-width: 1240px;
   width: 100%;
   max-height: 307px;
   height: 100%;
 }
-.maintitle-container p {
+.main-title-container p {
   font-weight: 400;
   font-size: 18px;
   color: var(--primary);
-  font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
 }
 .main-title {
@@ -191,8 +198,6 @@ header {
 /*Style-button*/
 .modal-btn-open {
   color: white;
-  font-weight: 600;
-  font-size: 16px;
   background-color: var(--color-brand);
   border: 1px solid var(--color-brand);
   border-radius: 32px;
@@ -201,6 +206,9 @@ header {
   cursor: pointer;
   transition: all 0.7s ease;
   margin-bottom: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 .modal-btn-open:hover {
   color: black;
@@ -208,11 +216,11 @@ header {
   transform: translateY(-3px);
 }
 .button-paragraf {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
   text-align: left;
+  padding-left: 0;
   color: #4a4a4a;
 }
 /*####-----####*/
@@ -226,13 +234,14 @@ header {
   margin-bottom: 140px;
   gap: 32px;
   position: relative;
+  justify-content: center;
 }
 .aboutus-section-title {
   text-align: left;
   margin-bottom: 40px;
 }
 
-aboutus-text {
+.aboutus-text {
   display: block;
   padding: 40px 32px 199px 0;
   max-width: 709px;
@@ -243,7 +252,6 @@ aboutus-text {
   font-size: 22px;
   line-height: 173%;
   color: var(--primary);
-  font-family: 'Roboto', sans-serif;
 }
 /*.aboutus {
   margin-bottom: 40px;
@@ -318,23 +326,22 @@ aboutus-text {
 }
 /*####-----####*/
 /*Why-choose-us-section*/
-.Whychooseus-container {
-  display: flex;
-  gap: 56px;
-}
-.Whychooseus-section {
+.Why-us-section {
   /*padding-bottom: 72px;*/
   margin-bottom: 96px;
   /*position: relative;*/
 }
-.Why-choose___section-title {
+.Why-us__section-title {
   margin-bottom: 40px;
 }
-.Whychooseus-container {
+.Why-us__card {
+  display: flex;
+  gap: 56px;
   flex-basis: calc(100%-112px / 3); /*для адаптивності*/
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .card {
   border-radius: 32px;
   width: 316px;
@@ -349,11 +356,10 @@ aboutus-text {
   width: 48px;
   height: 48px;
 }
-.Why-choose_text {
+.Why-us_text {
   font-weight: 400;
   font-size: 18px;
   line-height: 133%;
-
   color: #000;
   font-family: 'Roboto', sans-serif;
 }
@@ -475,7 +481,7 @@ section-title-procedures {
   font-size: 22px;
   text-align: center;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 /*####-----####*/
 .contact-map {
@@ -506,9 +512,8 @@ section-title-procedures {
   display: flex;
   /*align-content: center;*/
   justify-content: space-between;
-  flex-grow: 1;
   padding: 56px 0;
-  line-height: 2;
+  line-height: 1.18;
 }
 .footer-container,
 a {
@@ -516,7 +521,7 @@ a {
   font-size: 16px;
 }
 
-.footer-link {
+.footer_link {
   display: flex;
   color: #fff;
   text-decoration: none;
@@ -527,15 +532,13 @@ a {
   margin-bottom: 16px;
   text-align: left;
 }
-.footer-link:hover {
+.footer_link:hover {
   color: var(--color-brand);
   text-decoration: none;
 }
-.follow-us {
-  padding-top: 16px;
-}
 
-.follow-us {
+.follow-us-footer {
+  padding-top: 16px;
   display: flex;
   gap: 24px;
   /* margin-right: 102px;*/
@@ -602,6 +605,7 @@ p {
   font-family: 'Play', sans-serif;
   font-weight: 700;
   font-size: 64px;
+  margin-bottom: 40px;
 }
 .modal h3 {
   color: #fff;
@@ -628,12 +632,24 @@ p {
   position: absolute;
   top: 42px;
   right: 42px;
+  /*дизайн кнопки*/
+  fill: transparent;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /*Form*/
 .form-field {
   display: block;
   margin: 0 auto 24px;
+  width: 310px;
+  height: 52px;
+}
+.form-field,
+contact {
+  display: block;
+  margin: 0 auto 16px;
   width: 310px;
   height: 52px;
 }
@@ -672,12 +688,12 @@ input:not(:placeholder-shown) {
 .form-button {
   display: block;
   border-radius: 32px;
-
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   width: 281px;
   height: 53px;
   color: white;
-  font-weight: 600;
-  font-size: 16px;
   background-color: var(--color-brand);
   border: 1px solid var(--color-brand);
   transition: all 0.7s ease;
