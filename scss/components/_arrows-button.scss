@@ -1,0 +1,21 @@
+.arrows {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px, solid, #011c44;
+  align-items: center;
+  flex-shrink: 0; /*Щоб кнопки не стисткались*/
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-brand);
+    border: transparent;
+    fill: var(--background1);
+  }
+  &.next {
+    transform: rotate(180deg);
+  }
+}

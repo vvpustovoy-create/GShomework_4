@@ -1,0 +1,6 @@
+.backdrop.is-hidden {
+  /*Щоб працювала можлива анімація*/
+  visibility: hidden; /*Ховає модальне вікно*/
+  opacity: 0; /*прозоре*/
+  pointer-events: none; /*натискання кнопок блокується*/
+}

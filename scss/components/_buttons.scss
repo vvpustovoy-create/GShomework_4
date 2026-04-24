@@ -1,0 +1,54 @@
+/*section main*/
+.modal-btn-open {
+  color: white;
+  background-color: var(--color-brand);
+  border: 1px solid var(--color-brand);
+  border-radius: 32px;
+  width: 219px;
+  height: 53px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  margin-bottom: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.modal-btn-open:hover {
+  color: black;
+  background-color: transparent;
+  transform: translateY(-3px);
+}
+/*modal form*/
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  /*дизайн кнопки*/
+  background-color: transparent;
+  border: none;
+}
+.close {
+  fill: white;
+  cursor: pointer;
+}
+
+.form-button {
+  display: block;
+  border-radius: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  width: 281px;
+  height: 53px;
+  color: white;
+  background-color: var(--color-brand);
+  border: 1px solid var(--color-brand);
+  transition: all 0.7s ease;
+  margin: 0 auto 8px;
+}
+.form-button:hover {
+  color: black;
+  background-color: #d4d3d3;
+  border-color: #747272;
+  transform: translateY(-3px);
+}

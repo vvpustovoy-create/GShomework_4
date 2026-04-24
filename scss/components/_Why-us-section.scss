@@ -1,0 +1,25 @@
+.why-us {
+  /*padding-bottom: 72px;*/
+  margin-bottom: 96px;
+  /*position: relative;*/
+  &__because {
+    display: flex;
+    gap: 56px;
+    flex-basis: calc(100% - 112px / 3); /*для адаптивності*/
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__card {
+    border-radius: 32px;
+    width: 316px;
+    height: 181px;
+    box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+    background: white;
+    padding: 24px 32px;
+    text-align: center;
+  }
+  &__icon {
+    @include icon(48px, 48px, $color-brand);
+  }
+}

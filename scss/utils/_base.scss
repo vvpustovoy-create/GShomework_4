@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box; /*Візуальна модель форматування ,обнуляя відступи по замовченню*/
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px; /*1240+2*24*/
+  margin: 0 auto; /*Центрування контенеру*/
+  padding: 0 24px; /*Щоб не прилипало*/
+}
+a {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+p,
+h3 {
+  font-weight: 600;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.title-span {
+  color: var(--color-brand);
+}
+
+.section-title {
+  margin-bottom: 48px;
+}

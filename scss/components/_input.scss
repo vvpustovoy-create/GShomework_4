@@ -1,0 +1,37 @@
+.input {
+  display: block;
+  width: 310px;
+  height: 52px;
+  &__label {
+    display: block; /*label за замовчуванням строковий*/
+    position: absolute;
+  }
+  &__control {
+    padding: 18px 33px;
+    width: 100%;
+    border: 2px solid #747272;
+    border-radius: 32px;
+    line-height: 1.17;
+    background-color: transparent;
+    &:focus {
+      border-color: #747272;
+      background-color: #d4d3d3;
+      outline: none;
+    }
+    &::placeholder {
+      color: white;
+      line-height: 1.17;
+      font-size: 16px;
+    }
+    /*Валідація форми*/
+    /*зміна фона ячейки якщо вона заповнена*/
+    &:not(:placeholder-shown) {
+      background-color: white;
+    }
+    /*input:required {
+  background-color: antiquewhite; } /* Підсвічує обов'язкові поля червоним */
+  }
+}
+.contacts__input {
+  margin: 0 auto 16px;
+}

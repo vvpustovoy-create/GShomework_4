@@ -1,0 +1,13 @@
+@mixin star($top, $right, $fill, $width, $height) {
+  top: $top;
+  right: $right;
+  fill: $fill;
+  width: $width;
+  height: $height;
+}
+
+@mixin icon($width, $height, $fill) {
+  width: $width;
+  height: $height;
+  fill: $fill;
+}

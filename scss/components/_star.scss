@@ -1,0 +1,38 @@
+.star-icon {
+  position: absolute;
+}
+.star-blue {
+  @include star(32px, -27px, #2b7fff, 35px, 35px);
+  transform: rotate(45deg);
+  animation: cameOut 5s ease-in infinite;
+}
+
+.star-small {
+  @include star(269px, 6px, #747272, 15px, 15px);
+  animation: cameOut 9s ease-in-out infinite;
+  animation: spinAndScale 10s infinite linear;
+}
+.star-big {
+  @include star(336px, 295px, #011f4a, 56px, 56px);
+  animation: spinAndScale 7s infinite linear;
+}
+@keyframes cameOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spinAndScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
