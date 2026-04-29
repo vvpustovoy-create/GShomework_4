@@ -52,6 +52,32 @@
               <use href="./images/Icons.svg#icon-menu"></use>
             </svg>
           </button>
+          <!-- Mobil- MENU-->
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg class="mobil-menu__close" width="24" height="24">
+                <use href="./images/Icons.svg#icon-mobil-close"></use>
+              </svg>
+            </button>
+            <a class="mobile-menu__logo" href="/">
+              <img src="./images/logo.svg" alt="Логотип" />
+            </a>
+
+            <ul class="mobil-menu__list">
+              <li><a class="mobile-menu__link" href="#aboutus">Про нас</a></li>
+              <li>
+                <a class="mobile-menu__link" href="#Why_choose_us">Чому ми</a>
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#our_procedures"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -61,10 +87,12 @@
           <div class="main__container">
             <div class="main__title-container">
               <p class="simple-text main_txt">Косметологічна клініка</p>
-              <h1 class="main__title">Beauty<br />Zone</h1>
+              <h1 class="main__title">
+                Beauty<br class="main__title_adaptive-br" />Zone
+              </h1>
             </div>
             <div class="hero-button">
-              <button class="modal-btn-open" type="button">
+              <button class="main-button modal-btn-open" type="button">
                 Замовити дзвінок
               </button>
               <p class="main__button-paragraf">
@@ -123,7 +151,7 @@
       <section class="why-us" id="Why_choose_us">
         <div class="container">
           <div class="why-us__container">
-            <h2 class="section-title">
+            <h2 class="why-us__title section-title">
               Чому люди <br />
               <span class="title-span">обирають нас</span>
             </h2>
@@ -159,7 +187,7 @@
           </div>
         </div>
       </section>
-      <section class="procedures" id="our_procedures">
+      <!-- <section class="procedures" id="our_procedures">
         <div class="container">
           <h2 class="section-title">
             Наші <span class="title-span">процедури</span>
@@ -221,7 +249,9 @@
           </div>
         </div>
       </section>
-      <section class="contacts" id="contacts">
+      -->
+
+      <!-- <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="section-title">
             Як нас <span class="title-span">знайти</span>
@@ -241,9 +271,9 @@
                 Запишіться <span class="title-span">безкоштовно</span>
                 <br />
                 та отримайте подарунок
-              </h3>
-              <!--############### FORM ################## -->
-              <form name="contacts__main" autocomplete="off">
+              </h3> -->
+      <!-- ############### FORM ################## -->
+      <!-- <form name="contacts__main" autocomplete="off">
                 <div class="contacts__input input">
                   <label class="input__label" for="user-name"></label>
                   <input
@@ -288,11 +318,10 @@
                   <a class="agree__link" href="#">політикою конфіденційності</a>
                 </p>
               </form>
-              <!-- ##############FORM############ -->
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <footer class="footer">
       <div class="container">
@@ -370,7 +399,7 @@
     <!-- MODAL FORM -->
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">
+        <button class="modal-button modal-btn-close" type="button">
           <svg class="close" width="16" height="16">
             <use href="./images/Icons.svg#icon-close"></use>
           </svg>
@@ -429,5 +458,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

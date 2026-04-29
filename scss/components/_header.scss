@@ -1,22 +1,25 @@
 .header {
   /*background-color: antiquewhite;*/
   position: absolute;
-  padding-top: 32px;
   /*padding-bottom: 42px;*/
   right: 0px;
   left: 0px;
   width: 100%;
-
   max-height: 106px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  background-color: transparent;
+  backdrop-filter: blur (7);
+  @media screen and (min-width: $bp-tablet) {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7px);
+  }
 
   &__container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 48px;
+    padding-top: 21px;
   }
   &__nav {
     display: flex;
@@ -25,13 +28,10 @@
   }
   &__menu {
     display: none;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       gap: 56px;
       flex-grow: 1;
-      justify-content: flex-end;
-    }
-    @media screen and (min-width: $bp-desktop) {
       justify-content: center;
     }
   }
@@ -41,7 +41,7 @@
   }
   &__follow-us {
     display: none;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       gap: 32px;
       justify-content: flex-end;
@@ -62,7 +62,7 @@
   background-color: transparent;
   border: none;
   fill: #fff;
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     display: none;
   }
 }

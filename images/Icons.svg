@@ -52,6 +52,9 @@
 <symbol id="icon-close3" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l8 8 8-8M8 24l8-8 8 8"></path>
 </symbol>
+<symbol id="icon-mobil-close" viewBox="0 0 40 32">
+<path fill="none" stroke="#011c44" style="stroke: var(--color1, #011c44)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.3684" d="M15.158 8l10.105 8 10.105-8M15.158 24l10.105-8 10.105 8"></path>
+</symbol>
 
 </defs>
 </svg>

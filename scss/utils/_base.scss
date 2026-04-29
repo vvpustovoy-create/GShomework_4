@@ -37,9 +37,9 @@ h3 {
 
 h2 {
   font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 64px;
   text-align: center;
+  font-size: 64px;
+  font-weight: 700;
 }
 
 ul {
@@ -53,4 +53,11 @@ ul {
 
 .section-title {
   margin-bottom: 48px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
