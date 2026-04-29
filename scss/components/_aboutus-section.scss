@@ -3,16 +3,22 @@
   padding-top: 37px;
   &__container {
     display: flex;
-    margin-bottom: 140px;
-    gap: 32px;
     position: relative;
     justify-content: center;
+    margin-bottom: 104px;
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 140px;
+      gap: 32px;
+    }
   }
   &__services {
     display: block;
-    padding: 40px 32px 199px 0;
     max-width: 709px;
     width: 100%;
+    padding: 0px 20px 199px 0;
+    @media screen and (min-width: $bp-desktop) {
+      padding: 40px 32px 199px 0;
+    }
   }
   &__section-title {
     text-align: left;

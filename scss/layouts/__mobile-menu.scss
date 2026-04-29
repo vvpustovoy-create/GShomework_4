@@ -9,6 +9,7 @@
   background-color: #fff;
   transform: translateX(100%);
   transition: transform 0.3s;
+  display: none;
 
   &::after {
     position: absolute;
@@ -21,6 +22,8 @@
   }
 
   &.is-open {
+    display: flex;
+    flex-direction: column;
     transform: translateX(0);
   }
 
@@ -60,7 +63,4 @@
       color: $color-brand;
     }
   }
-}
-.mobile-menu__close {
-  fill: black;
 }
