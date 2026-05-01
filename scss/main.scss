@@ -3,14 +3,14 @@
 
 /*base*/
 @import './utils/base';
-@import './utils/_variables.scss';
-@import './utils/_fonts.scss';
-@import './components/buttons';
-@import './utils/_utils.scss';
+@import './utils/utils';
+@import './utils/fonts';
 @import './utils/mixins';
+@import './utils/variables';
 @import './components/links';
 @import './components/header';
 @import './components/main-section';
+@import './components/buttons';
 @import './components/aboutus-section';
 @import './components/_arrows-button';
 @import './components/procedures-section';
@@ -22,3 +22,4 @@
 @import './components/star';
 @import './components/input';
 @import './layouts/_mobile-menu';
+@import './components/pagination';

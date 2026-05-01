@@ -1,46 +1,103 @@
 .footer {
   position: relative;
   background-color: var(--primary);
-}
-.footer-container {
-  display: flex;
-  /*align-content: center;*/
-  justify-content: space-between;
-  padding: 56px 0;
-  line-height: 1.18;
-}
-.footer-container,
-a {
-  font-weight: 400;
-  font-size: 16px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 91px 66px;
+    line-height: 1.18;
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 56px 0;
+    }
+  }
+  &::after {
+    position: absolute;
+    width: 248px;
+    height: 153px;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    right: 0px;
+    @media screen and (min-width: $bp-desktop) {
+      content: '';
+      background-image: url('../images/footеr_decor.png');
+    }
+  }
 }
 
-.follow-us-footer {
+.footer__logo {
+  padding-top: 32px;
+  margin: 0 auto 42px;
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 0px;
+    margin: 0;
+  }
+}
+
+.footer__address {
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    text-align: left;
+  }
+}
+
+.footer__follow-us {
   display: flex;
-  gap: 24px;
-  justify-content: space-around;
+  gap: 20px;
+  justify-content: center;
+  @media screen and (min-width: $bp-desktop) {
+    justify-content: space-around;
+    gap: 24px;
+  }
 }
-.follow-us_icon_footer {
-  fill: white;
-  width: 42px;
-  height: 42px;
+
+.footer__nav {
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (min-width: $bp-desktop) {
+    text-align: left;
+  }
 }
-.follow-us_icon_footer:hover {
-  fill: var(--color-brand);
+.follow-us {
+  &_icon-footer {
+    width: 32px;
+    height: 32px;
+    fill: white;
+    @media screen and (min-width: $bp-desktop) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  &_icon-footer:hover {
+    fill: var(--color-brand);
+  }
 }
-.oher,
-p {
+
+.privacy-mobile {
+  display: block;
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.privacy {
+  display: none;
+  @media screen and (min-width: $bp-desktop) {
+    display: inline-block;
+  }
+}
+
+.other__txt {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 13px;
   color: #747272;
-}
-.footer::after {
-  position: absolute;
-  width: 248px;
-  height: 153px;
-  background-image: url(../images/footеr_decor.png);
-  background-repeat: no-repeat;
-  bottom: 0px;
-  right: 0px;
-  content: '';
+  text-align: center;
+  @media screen and (min-width: $bp-desktop) {
+    text-align: left;
+  }
 }

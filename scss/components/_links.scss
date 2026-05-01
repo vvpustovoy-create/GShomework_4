@@ -16,15 +16,12 @@
 }
 
 .footer_link {
-  display: flex;
   color: #fff;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
-  flex-grow: 1;
   transition: color 0.7s;
   margin-bottom: 16px;
-  text-align: left;
 }
 .footer_link:hover {
   color: var(--color-brand);
