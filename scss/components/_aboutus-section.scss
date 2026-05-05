@@ -1,6 +1,9 @@
 .about-us {
   /*text-align: left;*/
-  padding-top: 37px;
+  padding-top: 0px;
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 37px;
+  }
   &__container {
     display: flex;
     position: relative;
@@ -37,6 +40,7 @@
     text-align: left;
     font-weight: 400;
     font-size: 18px;
+    margin: 0 avto;
 
     @media screen and (min-width: $bp-tablet) {
       font-weight: 400;
@@ -52,6 +56,12 @@
   }
   @media screen and (min-width: $bp-desktop) {
     display: flex;
+    svg.star-small {
+      display: inline;
+    }
+    svg.star-blue {
+      display: inline;
+    }
     max-width: 499px;
     width: 100%;
     /*flex-basis: calc(40% -32 / 2);*/

@@ -1,7 +1,10 @@
 .why-us {
   /*padding-bottom: 72px;*/
-  margin-bottom: 96px;
+  margin-bottom: 40;
   position: relative;
+  @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 96;
+  }
   &__title {
     font-weight: 500;
     font-size: 32px;

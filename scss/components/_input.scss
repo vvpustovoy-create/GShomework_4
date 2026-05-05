@@ -11,14 +11,14 @@
     position: absolute;
   }
   &__control {
-    padding: 18px 33px;
+    padding: 18px 32px;
     width: 100%;
     border: 2px solid #747272;
     border-radius: 24px;
-    line-height: 1.17;
+    line-height: 1.1;
     background-color: transparent;
     @media screen and (min-width: $bp-tablet) {
-      padding: 16px 24px;
+      padding: 16px 23px;
       border-radius: 32px;
     }
 
@@ -29,11 +29,8 @@
     }
     &::placeholder {
       color: white;
-      line-height: 1.17;
-      font-size: 16px;
-      @media screen and (min-width: $bp-tablet) {
-        font-size: 13px;
-      }
+      line-height: 1.1;
+      font-size: 13px;
     }
     /*Валідація форми*/
     /*зміна фона ячейки якщо вона заповнена*/

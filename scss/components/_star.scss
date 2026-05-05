@@ -13,12 +13,7 @@
   animation: spinAndScale 10s infinite linear;
 }
 .star-big {
-  width: 40px;
-  height: 40px;
-  right: 22px;
-  display: flex;
-  top: -6px;
-  right: 22px;
+  @include star(353px, 23px, #011f4a, 40px, 40px);
   padding: 0;
   @media screen and (min-width: $bp-desktop) {
     @include star(336px, 295px, #011f4a, 56px, 56px);
