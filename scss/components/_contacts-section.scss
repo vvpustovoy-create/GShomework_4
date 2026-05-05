@@ -1,14 +1,37 @@
 .contacts {
-  margin-bottom: 96px;
+  margin-bottom: 0px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 96px;
+  }
+
   &__container {
     display: flex;
-    justify-content: center;
-    gap: 32px;
+    flex-direction: column;
+    gap: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+      justify-content: center;
+    }
   }
   &__map {
+    margin: 0;
+    padding-left: 0;
+    order: 2;
+    width: 360px;
+    height: 232px;
     flex-shrink: 0;
-    border-radius: 32px;
     border: none;
+    @media screen and (min-width: $bp-tablet) {
+      order: 1;
+      border-radius: 32px;
+      width: 360px;
+      height: 481px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      width: 605px;
+      height: 481px;
+    }
   }
   &__main {
     width: 310px;
@@ -16,14 +39,22 @@
   }
   /*######FORMA######*/
   &__form {
+    order: 1;
     justify-content: center;
-    border-radius: 32px;
-    max-width: 423px;
-    padding: 48px 56px;
-    width: 100%;
-    max-height: 481px;
-    height: 100%;
+    width: 320px;
+    height: 434px;
+    padding: 42px 22px;
+    border-radius: 24px;
     background-color: var(--primary);
+    @media screen and (min-width: $bp-tablet) {
+      order: 2;
+      border-radius: 32px;
+      max-width: 423px;
+      padding: 48px 56px;
+      width: 100%;
+      max-height: 481px;
+      height: 100%;
+    }
   }
   &__title {
     font-family: 'Roboto', sans-serif;
@@ -31,7 +62,11 @@
     font-size: 22px;
     text-align: center;
     color: white;
-    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+
     &_span {
       color: var(--color-brand);
     }
