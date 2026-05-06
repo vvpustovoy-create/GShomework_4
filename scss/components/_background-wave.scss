@@ -1,8 +1,11 @@
 .background-wave {
   background-image: url(../images/background-wave.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto;
-  overflow: hidden;
-  /* padding-top: 75px avto;*/
+  background-position: 44% top;
+  background-size: cover;
+  padding-top: 200px;
+  margin-top: -130px;
+  @media screen and (min-width: $bp-desktop) {
+    background-size: 100% 100%;
+  } /* padding-top: 75px avto;*/
 }
