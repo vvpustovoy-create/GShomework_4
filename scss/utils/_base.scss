@@ -32,24 +32,16 @@ h3 {
   font-weight: 600;
   font-size: 22px;
   font-family: 'Roboto', sans-serif;
-  @media screen and (min-width: $bp-tablet) {
-    font-family: 'Play', sans-serif;
-  }
 }
 
 h2 {
+  font-weight: 700;
   font-size: 32px;
-  font-weight: 500;
   font-family: 'Roboto', sans-serif;
-  @media screen and (min-width: $bp-tablet) {
-    font-family: 'Play', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-  }
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 
 ul {
