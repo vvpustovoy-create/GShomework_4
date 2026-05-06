@@ -1,6 +1,6 @@
 .contacts {
   margin-bottom: 0px;
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desktop) {
     margin-bottom: 96px;
   }
 
@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       flex-direction: row;
       gap: 32px;
       justify-content: center;
@@ -23,12 +23,12 @@
     flex-shrink: 0;
     border: none;
     @media screen and (min-width: $bp-tablet) {
-      order: 1;
       border-radius: 32px;
       width: 360px;
       height: 481px;
     }
     @media screen and (min-width: $bp-desktop) {
+      order: 1;
       width: 605px;
       height: 481px;
     }
